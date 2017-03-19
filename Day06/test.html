@@ -6,24 +6,18 @@
 </head>
 <body>
 <script>
-    /*
-     作者：李振超    2017年3月19日 16:48
-     冒泡排序：
-     */
-    function maoPao(arr) {
-        for(var i = 0; i < arr.length - 1; i++){
-            for(var j = 0; j < arr.length - i - 1; j++){
-                if(arr[j] > arr[j + 1]){
-                    var temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-            }
+    var a = {
+        valueOf : function () {
+            console.log("valueOf...")
+            return "1";
+        },
+        toString : function () {
+            console.log("toString....")
+            return "1"
         }
     }
-    var arr = [2, 4, 6, 1, 9, 7]
-    maoPao(arr);
-    console.log(arr);
+
+
 </script>
 </body>
 </html>
